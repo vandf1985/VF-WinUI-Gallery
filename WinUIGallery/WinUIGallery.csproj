@@ -98,6 +98,9 @@
             just add versionless PackageReferences here.  They will be updated to their actual versions by either the Packages.props file
             in the WinUI repo, or the next ItemGroup below when standalone. -->
     <ItemGroup>
+        <PackageReference Include="CommunityToolkit.WinUI" Version="7.1.2" />
+        <PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
+        <PackageReference Include="CommunityToolkit.WinUI.UI.Controls" Version="7.1.2" />
         <PackageReference Include="Microsoft.WindowsAppSDK" />
         <PackageReference Include="ColorCode.Core" />
         <PackageReference Include="Microsoft.Graphics.Win2D" />
@@ -170,6 +173,7 @@
         <None Remove="Controls\SampleThemeListener.xaml" />
         <None Remove="DataModel\IconsData.json" />
         <None Remove="SamplePages\SampleBuiltInSystemBackdropsWindow.xaml" />
+        <None Remove="ToolkitExtensionsPage.xaml" />
     </ItemGroup>
 
     <ItemGroup>
@@ -203,6 +207,9 @@
         <Content Include="ControlPagesSampleCode\Typography\TypographySample_xaml.txt" />
     </ItemGroup>
     <ItemGroup>
+        <Page Update="ToolkitExtensionsPage.xaml">
+          <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+        </Page>
         <Page Update="ControlPages\DesignGuidance\SpacingPage.xaml">
           <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
           <SubType>Designer</SubType>

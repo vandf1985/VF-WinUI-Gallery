@@ -265,6 +265,10 @@
                     x:Name="AllControlsItem"
                     Content="All samples"
                     Icon="AllApps" />
+                <NavigationViewItem
+                     x:Name="ToolkitExtensionsItem"
+                     Content="Toolkit Extensions"
+                     Icon="Library" />
                 <NavigationViewItemSeparator />
             </NavigationView.MenuItems>
         </NavigationView>

@@ -208,6 +208,10 @@ namespace WinUIGallery
                 {
                     targetPageType = typeof(AllControlsPage);
                 }
+                else if (uri == "ToolkitExtensions")
+                {
+                    targetPageType = typeof(ToolkitExtensionsPage);
+                }
                 else if (uri == "NewControls")
                 {
                     targetPageType = typeof(HomePage);

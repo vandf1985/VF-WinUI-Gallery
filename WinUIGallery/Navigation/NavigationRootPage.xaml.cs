@@ -313,6 +313,13 @@ namespace WinUIGallery
                         Navigate(typeof(AllControlsPage));
                     }
                 }
+                else if (selectedItem == ToolkitExtensionsItem)
+                {
+                    if (rootFrame.CurrentSourcePageType != typeof(ToolkitExtensionsPage))
+                    {
+                        Navigate(typeof(ToolkitExtensionsPage));
+                    }
+                }
                 else if (selectedItem == Home)
                 {
                     if (rootFrame.CurrentSourcePageType != typeof(HomePage))
