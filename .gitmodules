@@ -1,0 +1,3 @@
+[submodule "Community"]
+	path = Community
+	url = https://github.com/CommunityToolkit/Windows.git
